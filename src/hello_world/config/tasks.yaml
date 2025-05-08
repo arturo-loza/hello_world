@@ -1,0 +1,20 @@
+gather_weather_data:
+  description: >
+    Gather and summarize the current weather conditions in {city}. Use the most recent and reliable data sources 
+    to determine temperature, humidity, chance of precipitation, wind speed, and any relevant weather alerts. 
+    Present the results clearly and concisely so they can be easily understood and rephrased for a general audience.
+  expected_output: >
+    A short, fact-based weather summary of the current conditions in {city}, including temperature, condition 
+    (e.g., sunny, cloudy, rainy), and any alerts or unusual weather activity.
+  agent: weather_analyst
+
+present_weather_update:
+  description: >
+    Take the weather summary provided by the weather analyst and turn it into a friendly, upbeat weather report 
+    for the radio audience. Add personality, relevant puns or jokes, and keep the tone light-hearted while 
+    remaining informative and professional. Ask the user if any input is needed.
+  expected_output: >
+    A fun, listener-friendly weather report for {city}, ready to be read on-air. It should be engaging, easy to 
+    follow, and include any important weather details like rain, heatwaves, or sudden changes.
+  agent: weather_presenter
+
